@@ -1,3 +1,7 @@
+#! python
+#!/usr/bin/python34
+#!/usr/bin/python33
+# above line calls python on windows systems
 # single line comment in python
 """
 multiline comment in python
@@ -28,6 +32,8 @@ import sys
 print(sys.version)
 # or print("The Python version is %s.%s.%s" % sys.version_info[:3]) to filter detail
 print("The Python version is %s.%s.%s" % sys.version_info[:3])
+# or perhaps without having to 'import sys' as above, call full path directly
+sys.stdout.write("hello from Python %s\n" % (sys.version,))
 
 
 # Some Printing Examples
